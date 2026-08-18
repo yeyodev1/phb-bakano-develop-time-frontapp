@@ -1,0 +1,18 @@
+# dependencias
+node_modules
+
+# build
+dist
+
+# entorno — NUNCA subir
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel
+
+# sistema
+.DS_Store
+*.local
+*.log

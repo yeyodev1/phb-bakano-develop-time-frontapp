@@ -1,0 +1,87 @@
+// ─── PHB Develop Time — sistema monocromo (negros / blancos) ─────────────────
+// Superficies casi negras, tipografía blanca, acento blanco puro.
+// Los colores semánticos existen pero desaturados: informan sin gritar.
+
+// ── Superficies ───────────────────────────────────────────────────────────────
+$black:        #08080A;
+$surface-0:    #0B0B0D;   // fondo de página
+$surface-1:    #121214;   // tarjetas
+$surface-2:    #17171A;   // superficie interior / inputs
+$surface-3:    #1E1E22;   // hover
+$overlay:      rgba(0, 0, 0, 0.72);
+
+// ── Texto ─────────────────────────────────────────────────────────────────────
+$text-1: #FAFAFA;
+$text-2: rgba(250, 250, 250, 0.64);
+$text-3: rgba(250, 250, 250, 0.40);
+$text-4: rgba(250, 250, 250, 0.24);
+
+// ── Bordes ────────────────────────────────────────────────────────────────────
+$border:        rgba(255, 255, 255, 0.07);
+$border-medium: rgba(255, 255, 255, 0.14);
+$border-strong: rgba(255, 255, 255, 0.26);
+
+// ── Acento (blanco puro) ──────────────────────────────────────────────────────
+$accent:      #FFFFFF;
+$accent-ink:  #08080A;   // texto sobre acento
+$accent-soft: rgba(255, 255, 255, 0.10);
+
+// ── Sombras ───────────────────────────────────────────────────────────────────
+$shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+$shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.45);
+$shadow-md: 0 12px 40px rgba(0, 0, 0, 0.55);
+
+// ── Semánticos desaturados ────────────────────────────────────────────────────
+$tone-sand:   #B9A57E;
+$tone-clay:   #B5786F;
+$tone-sage:   #86A38C;
+$tone-mist:   #9A97AE;
+$tone-steel:  #8A8F98;
+$tone-ash:    #63666D;
+
+$status-pending:     $tone-sand;
+$status-approved:    $tone-steel;
+$status-in_progress: $text-1;
+$status-blocked:     $tone-clay;
+$status-review:      $tone-mist;
+$status-done:        $tone-sage;
+$status-cancelled:   $tone-ash;
+
+$priority-low:    $tone-ash;
+$priority-medium: $tone-steel;
+$priority-high:   $tone-sand;
+$priority-urgent: $tone-clay;
+
+$alert-warning: $tone-sand;
+$alert-info:    $tone-steel;
+$alert-success: $tone-sage;
+$alert-error:   $tone-clay;
+
+// ── Espaciado ─────────────────────────────────────────────────────────────────
+$space-xs: 0.25rem;
+$space-sm: 0.5rem;
+$space-md: 0.75rem;
+$space-lg: 1rem;
+$space-xl: 1.5rem;
+$space-2xl: 2.25rem;
+
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 14px;
+$radius-pill: 999px;
+
+// ── Breakpoints (mobile-first) ────────────────────────────────────────────────
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+$sidebar-width: 248px;
+
+// ── Alias de compatibilidad ───────────────────────────────────────────────────
+$white:          #FFFFFF;
+$text-light:     $text-1;
+$text-secondary: $text-2;
+$text-muted:     $text-3;
+$primary:        $accent;
+$primary-dark:   $black;
